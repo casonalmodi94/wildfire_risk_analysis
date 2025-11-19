@@ -32,3 +32,37 @@ wildfire-risk-analysis/
 ├── requirements.txt
 └── README.md
 
+🧠 Model
+
+The model is a Random Forest Classifier trained on:
+
+elevation
+
+vegetation_index
+
+temperature
+
+distance_to_road
+
+Target:
+burned (1 = wildfire occurred, 0 = no wildfire)
+
+The model outputs:
+
+Probability of wildfire risk for each grid cell
+
+Discrete risk levels: Low / Medium / High
+
+🗺️ Visualization
+
+An interactive Folium map shows wildfire risk over a 5×5 grid overlaying the study area.
+
+Each cell is color-coded by risk level, with tooltips showing:
+
+Cell ID
+
+Risk probability
+
+Risk level
+
+A screenshot of the map is available in outputs/risk_map_screenshot.png.
