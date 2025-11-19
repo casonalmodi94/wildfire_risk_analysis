@@ -1,0 +1,9 @@
+geopandas
+shapely
+folium
+pandas
+numpy
+scikit-learn
+fiona
+pyproj
+rtree
